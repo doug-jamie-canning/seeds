@@ -23,3 +23,10 @@ model <- ctree(seedType ~ . , data=trainSet)   # create a decision-tree model
 summary(model)   # see some useful information about the model you just created
 model
 plot(model)   # visualize the model by creating a plot of the decision tree with this code
+
+table(predict(model), trainSet$seedType)   # check the model against the training data, error rate is 11 out of 147 or 7.48 percent
+testPrediction <- predict(model, newdata=testSet)   # store the test data in a variable (testPrediction) for later predictions
+table(testPrediction, testSet$seedType)   # view how the model performed with the test data and calculate the error
+
+newPrediction <- predict(model, list(area=11, perimeter=13, compactness=0.855, length=5, width=2.8, asymmetry=6.5, length2=5))
+newPrediction
