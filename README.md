@@ -1,5 +1,5 @@
 # seeds
-This program uses a decision tree to make predictions using the Seeds dataset. This program is an example taken from the book
+This program uses a decision tree or random forest algorithm to make predictions using the Seeds dataset. This program is an example taken from the book
 "Predictive Analytics for Dummies" by Anasse Bari, PhD, Mohamed Chaouchi and Tommy Jung. The dataset is provided at 
 http://archive.ics.uci.edu/ml/machine-learning-databases/00236/seeds_dataset.txt
 
